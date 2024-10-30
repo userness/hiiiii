@@ -1,10 +1,10 @@
 hummingbird.startHummingbird()
 basic.forever(function () {
     hummingbird.setTriLED(
-        TwoPort.One,
-        0,
-        255,
-        0
+    TwoPort.One,
+    0,
+    255,
+    0
     )
 })
 basic.forever(function () {
@@ -18,7 +18,7 @@ basic.forever(function () {
 })
 basic.forever(function () {
     let stop2: number;
-    if (input.buttonIsPressed(Button.A)) {
+if (input.buttonIsPressed(Button.A)) {
         stop2 = 1
     }
 })
@@ -37,9 +37,9 @@ basic.forever(function () {
 })
 basic.forever(function () {
     hummingbird.setTriLED(
-        TwoPort.Two,
-        255,
-        0,
-        0
+    TwoPort.Two,
+    255,
+    0,
+    0
     )
 })
