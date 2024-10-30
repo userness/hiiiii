@@ -1,10 +1,10 @@
 hummingbird.startHummingbird()
 basic.forever(function () {
     hummingbird.setTriLED(
-    TwoPort.One,
-    0,
-    255,
-    0
+        TwoPort.One,
+        0,
+        255,
+        0
     )
 })
 basic.forever(function () {
@@ -18,9 +18,12 @@ basic.forever(function () {
 })
 basic.forever(function () {
     let stop2: number;
-if (input.buttonIsPressed(Button.A)) {
+    if (input.buttonIsPressed(Button.A)) {
         stop2 = 1
     }
+})
+basic.forever(function () {
+    basic.showString("Grinch")
 })
 basic.forever(function () {
     basic.pause(100)
@@ -28,10 +31,15 @@ basic.forever(function () {
     basic.pause(2000)
 })
 basic.forever(function () {
+    hummingbird.setLED(ThreePort.Two, 250)
+    hummingbird.setLED(ThreePort.Three, 250)
+    hummingbird.setLED(ThreePort.One, 250)
+})
+basic.forever(function () {
     hummingbird.setTriLED(
-    TwoPort.Two,
-    255,
-    0,
-    0
+        TwoPort.Two,
+        255,
+        0,
+        0
     )
 })
